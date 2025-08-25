@@ -21,7 +21,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package:///meshes/base_link.STL"/>
+                <mesh filename="package://r5_urdf/meshes/base_link.STL"/>
             </geometry>
         </collision>
     </link>
