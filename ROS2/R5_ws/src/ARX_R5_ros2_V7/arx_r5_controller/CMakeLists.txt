@@ -48,18 +48,15 @@ install(FILES ${DEPEND_LIB}
 
 install(DIRECTORY launch/
   DESTINATION share/${PROJECT_NAME}/launch
-  FILES_MATCHING PATTERN "*.launch.py")
+  FILES_MATCHING PATTERN "*.py")
 
 install(DIRECTORY config/
   DESTINATION share/${PROJECT_NAME}/config
   FILES_MATCHING PATTERN "*.yaml")
 
-install(FILES X5liteaa0.urdf
+install(DIRECTORY urdf
         DESTINATION share/${PROJECT_NAME}
-)
-
-install(FILES R5_master.urdf
-        DESTINATION share/${PROJECT_NAME}
+        USE_SOURCE_PERMISSIONS
 )
 
 ament_export_dependencies(rosidl_default_runtime)
